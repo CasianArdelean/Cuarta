@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dm2.cuarta.Ejer1b"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACEPTAR"
+        android:onClick="res"/>
+
+    <Button
+        android:id="@+id/rechazar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RECHAZAR"
+        android:onClick="res"/>
+
+
+</LinearLayout>

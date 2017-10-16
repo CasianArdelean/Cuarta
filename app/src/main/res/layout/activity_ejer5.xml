@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dm2.cuarta.Ejer5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COCINA"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"/>
+        <Switch
+            android:id="@+id/uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="sw"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALÓN"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <!-- vert 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMPERATURA"/>
+        <NumberPicker
+            android:id="@+id/pick1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></NumberPicker>
+
+        <ToggleButton
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Luz APAGADA"
+            android:textOn="Luz ENCENDIDA"/>
+
+
+
+
+        </LinearLayout>
+        <!-- vert 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMPERATURA"/>
+            <NumberPicker
+                android:id="@+id/pick2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></NumberPicker>
+            <ToggleButton
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Luz APAGADA"
+                android:textOn="Luz ENCENDIDA"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ACEPTAR"
+    android:layout_gravity="center"
+    android:onClick="verificar"/>
+
+</LinearLayout>
